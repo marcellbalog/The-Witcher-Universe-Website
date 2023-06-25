@@ -1,0 +1,215 @@
+<!DOCTYPE HTML> 
+<HTML lang="hu">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Balog Marcell">
+	<meta name="description" content="Witcher">
+	<link rel="stylesheet" href="style.css"> 
+	<title>The Witcher Universe</title> 
+	<link rel="icon" type="image/png" href="images/logo1.png" />
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="galleria/galleria-1.5.7.js"></script>
+	<script src="galleria/themes/classic/galleria.classic.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#monsters').galleria({
+				width:500,
+				height:500
+			});
+		});
+	</script>
+</head> 
+<body>
+	<div class="row">
+		<header>
+			<div class="container">
+				<a href="index.html" class="logo-cont">
+					<img src="images/logo1.png" alt="logo" class="logo">
+				</a>
+				<nav id="menu">					
+					<ul id="menu_listd" class="navbar">						
+						<li><img class="menu-button" onClick="showMenu2()" src="images/menu_icon.png" alt="menu"></li>
+						<li><a href="story.html" id="first">Story</a></li>					
+						<li><a href="characters.html">Characters</a></li>									
+						<li><a href="#"  class="active">World</a></li>
+						<li><a href="quiz.html">Feedback</a></li>
+					</ul>		
+				</nav>
+			</div>
+		</header>
+	</div>
+	<div class="common-bg">
+	</div>
+	<div class="row">
+		<h1 class="common-title">World</h1>
+		<p class="world-quote">“You’ve mistaken the stars reflected on the surface of the lake at night for the heavens.” </p>
+		<div class="world-map">
+			<img src="images/map.png" alt="map" class="world-map-img">
+			<div class="world-map-textpanel col-t-4 col-12">
+				<div class="world-map-text" style="display:block;">
+					<h2>Click on the banners to learn about the locations</h2>
+				</div>
+				<!--<img src="images/mapicons/aedirn.png" class="world-map-bg" id="aedirn" onclick="iconClick(this.id)">
+				<img src="images/mapicons/cintra.png" class="world-map-bg" id="cintra" onclick="iconClick(this.id)">
+				<img src="images/mapicons/kaedwen.png" class="world-map-bg" id="kaedwen" onclick="iconClick(this.id)">
+				<img src="images/mapicons/kovir-poviss.png" class="world-map-bg" id="kovpov" onclick="iconClick(this.id)">
+				<img src="images/mapicons/lyria-rivia.png" class="world-map-bg" id="lyrriv" onclick="iconClick(this.id)">
+				<img src="images/mapicons/redania.png" class="world-map-bg" id="redania" onclick="iconClick(this.id)">
+				<img src="images/mapicons/temeria.png" class="world-map-bg" id="temeria" onclick="iconClick(this.id)">				
+				<img src="images/mapicons/skellige.png" class="world-map-bg" id="skellige" onclick="iconClick(this.id)">	
+				<img src="images/mapicons/nilfgaard.png" class="world-map-bg" id="nilfgaard" onclick="iconClick(this.id)">	-->
+				<div class="world-map-text" id="aedirnX">
+					<h1>Aedirn</h1>
+					<p>Aedirn, adjacent to the mountains forming the western border of the continent, was one of the latest areas colonized by humans. Unfortunately, aversion to other races still exists, especially the elves, whose remnants still inhabit the dense woodlands and mountain valleys, including nearby Dol Blathanna. In contrast to it, the situation of dwarves is rather good; many of them live on an even keel in Upper Aedirn, near their homeland, the Mahakam Mountains.</p>
+
+					<p>Aedirn is an agricultural country full of ridges and hills. Unchanging, continental climate makes the grounds give good yields, especially in the east, in the area called the Valley of Flowers (or Dol Blathanna in Elder Speech), which forms a real granary to the kingdom.</p>
+					
+					<p>It also has a well-developed industry. In Upper Aedirn and at the border with Mahakam, large amounts of minerals, mainly coal and less precious metals are exploited by Aedirn's mines. In Gulet and Eysenlaan there are smelters and forges. Vengerberg (which is the capital of the realm) and Aldersberg are mainly known for dyeworks and manufactures of wool and textiles. Vengerberg also has malt mills and distilleries.</p>
+				</div>
+				<div class="world-map-text" id="cintraX">
+					<h1>Cintra</h1>
+					<p>The Kingdom of Cintra is one of the Northern Kingdoms, located south of Sodden, Riverdell, and the great river Yaruga.</p>
+
+					<p>Cintra was a very powerful kingdom in the times of Queen Calanthe, but was conquered by Nilfgaard during the First Nilfgaard War. After the Second Nilfgaard War, the kingdom is nominally an independent state, but is actually ruled by Emperor Emhyr var Emreis of Nilfgaard because of his marriage to Empress Cirilla, also known as False Ciri.</p>
+
+					<p>Cintra's neighbors are Sodden, Brugge, and the Nilfgaard province of Nazair. When Emhyr var Emreis proclaimed False Ciri queen, he also named her princess of Brugge, duchess of Sodden, heir of Skellige, and sovereign of Attre and Abb Yarra.</p>
+				</div>
+				<div class="world-map-text" id="kaedwenX">
+					<h1>Kaedwen</h1>
+					<p>Kaedwen is the largest of the Northern Kingdoms (and the second largest country in the Continent, next to Nilfgaard). Its main cities are its capital, Ard Carraigh, and the city of Ban Ard, famous for its sorcery school. Known for its cold and unforgiving climate, along with the many forests within its borders, its name may come from the Elder Speech, slightly corrupted: Caedwen or White Forest.</p>
+
+					<p>King Henselt frequently quarreled with neighboring Aedirn, mostly over the ownership of the Pontar Valley which once belonged to the Kaedweni. Kaedwen also shares borders with the kingdoms of Redania and Caingorn; and portions of the Fiery Mountains, the Kestrel Mountains and the Blue Mountains run through the kingdom. The witchers' fortress of Kaer Morhen is located amidst the peaks of the Blue Mountains, and further south lies the land of the Free Elves, an enclave established by elves seeking refuge from centuries of warring with humans.</p>
+
+					<p>In the far future, the weather has changed enough that northern regions, like Talgar, Caingorn, and Kaedwen, are no longer able to grow certain types of produce due to the colder climate. In particular, Kaedwen no longer has the capability to grow grapevines and thus no longer has a wine industry.</p>
+				</div>
+				<div class="world-map-text" id="kovpovX">
+					<h1>Kovir and Poviss</h1>
+					<p>The Kingdom of Kovir and Poviss (also known shortly as Kovir and Poviss or simply Kovir) is one of the Northern Kingdoms located on the Gulf of Praxeda. It is also the largest exporter of mineral resources in the known world, with huge profits from trade. It is ruled by king Tankred Thyssen of the House of Thyssen and maintained neutrality during the Nilfgaard Wars, refraining from lending coin nor men to either side.</p>
+					<p>Because it is so mountainous, the region is rich in mines. Kovir and Poviss export glass, salt, iron ore, silver, nickel, lead, tin, zinc, copper, chromium, titanium, tungsten, and platinum. Not to mention three-quarters of the world's ferroaurum, kryobelitium, and dimeritium and 80% of the world's gold.</p>
+				</div>
+				<div class="world-map-text" id="lyrrivX">
+					<h1>Lyria and Rivia</h1>
+					<p>Lyria and Rivia was one of the Northern Kingdoms, located north of the river Yaruga, and ruled by Queen Meve. The kingdom's neighbors were Mahakam, Aedirn, and Dol Angra.</p>
+
+					<p>Prior to then Princess Meve of Lyria and King Reginald of Rivia's marriage sometime in the 1200s, Lyria and Rivia were two separate kingdoms but combined into one when the two married. It continued to stay this way after Reginald died and Meve become the sole ruler, but sometime after she passed the kingdom once more split apart into two separate kingdoms.</p>
+
+					<p>In July, 1267, during the Second Nilfgaard War, Lyria and Rivia were invaded and conquered by Nilfgaard without any formal declaration of war. It was, however, liberated in the later phases of the war.</p>
+				</div>
+				<div class="world-map-text" id="redaniaX">
+					<h1>Redania</h1>
+					<p>	The Kingdom derives enormous profits from trade with Novigrad as well as grain exports. It may be said that the monarchy is the granary of the whole Continent, and even other parts of the world. Therefore, the dominant landscape of Redania is huge, undulating fields of grain. Currently, the state economy is seriously threatened, because of the flow of cheap goods from Nilfgaard and others into the country, which constitute serious competition for local artisans. In addition, there are very few manufactories.</p>
+
+					<p>For ages, Redania has fought a customs war with Temeria, its primary rival in the North. The country possesses the best intelligence network in the world. The government of Redania is also heavily influenced by sorceresses.</p>
+
+					<p>King Vizimir II of Redania was assassinated during the Second Nilfgaard War. During the interregnum, the country was ruled by a Regency Council headed by Sigismund Dijkstra, the head of Redanian Intelligence, and Philippa Eilhart, head of the Lodge of Sorceresses.</p>
+
+					<p>Quite specific is the social structure of this country - the cult of the nobility runs strong in Redania. That social stratum possesses more privileges here than in any nearby realm. Great differences in wealth exist among the gentry, but Redanian law cares for birth not property, making a well-born beggar the legal equal of the richest magnate. Those of high birth and great wealth draw the latter primarily from the grain trade and pedigreed horse husbandry. At the last, Redanians excel, outdoing all other nations; Redanian steeds are unsurpassed. The Redanian cavalry is thus among the best of its kind in the world, and with the country's nobility filling its ranks, it is the heart of Redanian armed forces.</p>
+
+					<p>As a consequence of nobility's privileged position, the peasantry is treated worse here than in any neighbouring state, and only the king's iron fist keeps them from rebelling.</p>
+				</div>
+				<div class="world-map-text" id="temeriaX">
+					<h1>Temeria</h1>
+					<p>One of the fiefdoms of Temeria is the dukedom of Ellander and the magical Thanedd Island, with a school for young female adepts of magic located off the kingdom's western shores. Temeria is the strongest of the Northern Kingdoms and played a key role in the war against Nilfgaard. Temeria is ruled by King Foltest and its capital is Vizima.</p>
+
+					<p>The Temerian population is very polite and religious but does not accept representatives of the so-called Elder Races. In general Temeria's residents have a tendency for xenophobia. This region is the home of powerful sorcerers and famous travelers.</p>
+
+					<p>Temeria is one of the wealthiest realms in the North. Temerian economy is based on cultivating the production of various goods, trade, and extracting valuable mineral resources, from the mountains of Mahakam. The Temerian oren is one of the most used currencies in the world. Temeria also remains a land with highly developed agriculture, animal husbandry, and food industry. As Mahakam is officially part of the kingdom, Temeria has considerable interests in the extraction of precious metals and production of high quality weapons.</p>
+
+					<p>The most popular and most widespread religion in kingdom is worship of the goddess Melitele but cults of Prophet Lebioda and Kreve also have their followers.</p>
+				</div>
+				<div class="world-map-text" id="skelligeX">
+					<h1>Skellige</h1>
+					<p>Skellige, commonly referred to as the Skellige Isles or the Isles of Skellige, is an archipelago and one of the Northern Kingdoms. The group of six islands is situated in the Great Sea, off the coast of Cintra and southwest of Cidaris and Verden. It's legendary, famous for the unrivaled corsairs and swift longships that sail many seas.</p>
+					<p>Its people are united under the King of the Skellige Isles, who's elected by the jarls of the seven major clans during traditional moots. In practice, however, the kings are from the same clan or at least related.</p>
+
+					<p>Even though their relations with most of the North were always tense, to say the least, they were longtime allies of Cintra, due to the marriage between Queen Calanthe and Eist Tuirseach of Skellige. After King Eist's death in the Battle of Marnadal, the Islanders concentrated their raids on the Nilfgaardian Empire in an act of revenge.</p>
+				</div>
+				<div class="world-map-text" id="nilfgaardX">
+					<h1>Nilfgaard</h1>
+					<p>The Nilfgaardian Empire (Ceas'raet aep Nilfgaard in the Nilfgaardian speech) is the most powerful empire in the history of the known world. It is located in the southern part of the Continent and boasts both a thriving economy and a strong, well-trained army with talented commanders. It has expanded mostly through the conquest of foreign countries, which were then turned into provinces of the Empire. The Empire's inhabitants believe that "real" Nilfgaardians are only those born in the heart of the Empire, and not those born in the conquered provinces.</p>
+					<p>The provinces are ruled by either stewards or kings (in cases in which a king willingly surrenders, he retains his throne but is subject to the Emperor or just a vassal). The empire has expanded throughout the years, conquering new lands and going as far to the north as the Yaruga River during the reign of Emperor Emhyr var Emreis.</p>
+
+					<p>In the Witcher saga, the Empire is portrayed as an overarching antagonist, with many free people of the North expressing hatred towards it with passion. It is introduced in Blood of Elves, when it invades Cintra.</p>
+				</div>
+			</div>
+			<div class="world-map-iconpanel">
+				<img src="images/mapicons/aedirn.png" class="world-map-icon" id="aedirn" onclick="iconClick(this.id)">
+				<img src="images/mapicons/cintra.png" class="world-map-icon" id="cintra" onclick="iconClick(this.id)">
+				<img src="images/mapicons/kaedwen.png" class="world-map-icon" id="kaedwen" onclick="iconClick(this.id)">
+				<img src="images/mapicons/kovir-poviss.png" class="world-map-icon" id="kovpov" onclick="iconClick(this.id)">
+				<img src="images/mapicons/lyria-rivia.png" class="world-map-icon" id="lyrriv" onclick="iconClick(this.id)">
+				<img src="images/mapicons/redania.png" class="world-map-icon" id="redania" onclick="iconClick(this.id)">
+				<img src="images/mapicons/temeria.png" class="world-map-icon" id="temeria" onclick="iconClick(this.id)">				
+				<img src="images/mapicons/skellige.png" class="world-map-icon" id="skellige" onclick="iconClick(this.id)">	
+				<img src="images/mapicons/nilfgaard.png" class="world-map-icon" id="nilfgaard" onclick="iconClick(this.id)">	
+			</div>
+		</div>
+		<div class="world-table">
+			<div class="col-12 col-t-6">
+				<div class="world-panel">
+					<h1>Who are the witchers?</h1>
+					<p>A witcher (also wiccan or hexer or in the Elder Speech: vatt'ghern) is someone who has undergone extensive training, ruthless mental and physical conditioning, and mysterious rituals (which take place at "witcher schools" such as Kaer Morhen) in preparation for becoming an itinerant monsterslayer for hire. Geralt, the central character in Andrzej Sapkowski's Witcher series and the subsequent games inspired by them, is said in the stories to be one of the greatest witchers; he is certainly legendary, but whether famous or infamous is more open to interpretation (and/or subject to gameplay, as the case may be).</p>
+
+					<p>	Taken in as children, witchers-to-be are subjected to intense alchemical processes, consumption of mutagenic compounds, and relentless physical and magical training to make them dangerous and highly versatile against their vast array of opponents, many of which possess superhuman speed, strength and/or other deadly powers. These procedures ultimately mean that each fully-trained witcher is a mutant built specifically to hunt and kill inhuman prey. The key permanent results of mutations shared by all witchers include:</p>
+
+					<p>Sterility (which partially explains selection from the outsiders, as they cannot breed to pass on their traits).
+					Cat-like eyes that grant very acute nightvision - witchers can constrict their pupils to see in blinding light or open them to see in near pitch darkness. This nightvision can be further enhanced with the cat potion, but in general, it is good enough by itself to not require further enhancement.</p>
+					<p>Tremendous resistance to disease (which functions in most cases as complete immunity) and a boosted immune system, allowing them to consume large quantities of potions that could prove easily deadly if consumed even in small amounts by a normal man.</p>
+					<p>Exceptionally increased strength, speed, reflexes, and endurance, far beyond any normal or well-trained human, that allows them to swiftly end fights with minimal effort, and perform physical feats non-witchers couldn't hope to match. A witcher's physical skills alone are sufficient to defeat most monsters single-handedly if combined with extensive training and proper weaponry, whereas regular men could only hope to accomplish this in large groups. Witchers have also been shown to shrug off hits that would normally render normal men unconscious. Additionally, they have been known to survive the strikes of powerful monsters such as giants, or other beings possessing heruculean strength, that would otherwise kill others with a single blow.</p>
+					<p>Having the ability to perform simple yet incredibly versatile combat magic in the form of signs. They also develop a sixth sense that allows them to "feel" things around them, be it items of importance or people's immediate intentions. This explains their uncanny ability to track and hunt people and monsters.</p>
+				</div>
+			</div>
+			<div class="col-12 col-t-6">
+				<div  class="world-panel">					
+					<h1>Monsters of the world</h1>
+					<p>“People," Geralt turned his head, "like to invent monsters and monstrosities. Then they seem less monstrous themselves."</p>
+					<p></p>
+					<article id="monsters">
+						<img src="images/monsters/0,1.jpg" alt="Chorts are smaller than fiends, true. But still big enough to kill. – Agnes Thistle, herbalist from the Black Forest" title="Chort">
+						<img src="images/monsters/0,2.jpg" title=" Ekimmara">
+						<img src="images/monsters/0,3.jpg" title=" Fiend">
+						<img src="images/monsters/0,4.jpg" title=" Wyvern">
+						<img src="images/monsters/0,5.jpg" title=" Werewolf">
+						<img src="images/monsters/0,6.jpg" title=" Rotfiend">
+						<img src="images/monsters/0,7.jpg" title=" Wild Hunt Minion">
+						<img src="images/monsters/0,8.jpg" title=" Glustyworp">
+						<img src="images/monsters/0,9.jpg" title=" Bruxa">
+						<img src="images/monsters/0,10.jpg" title=" Harpy">
+						<img src="images/monsters/0,11.jpg" title=" Ghoul">
+						<img src="images/monsters/0,12.jpg" title=" Kayran">
+						<img src="images/monsters/0,13.jpg" title=" Arachas">
+						<img src="images/monsters/0,14.jpg" title=" Griffin">
+						<img src="images/monsters/0,15.jpg" title=" Foglets">						
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<footer class="col-12 col-t-12">
+			<p>All rights belong to Andrzej Sapkowski & CD Project Red</p>
+		</footer>
+	</div>
+	<script>
+		var dclass = document.getElementById("menu_listd");		
+		function showMenu2() {
+			if (dclass.className == "navbar") {
+				dclass.className += " responsive";
+			} else {
+				dclass.className = "navbar";
+			}
+		}
+		var prevX
+		function iconClick(item){
+			if(prevX != null)
+				prevX.style.display= "none";
+			var text = document.getElementById(item + "X");
+			//alert(text);
+			text.style.display= "block";
+			prevX = text;
+		}
+	</script>
+
+</body> 
+</HTML> 

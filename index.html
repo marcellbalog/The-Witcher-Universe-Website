@@ -1,0 +1,62 @@
+<!DOCTYPE HTML> 
+<HTML lang="hu">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Balog Marcell">
+	<meta name="description" content="This site contains the basics of the fantasy world of the Witcher">
+	<link rel="stylesheet" href="style.css"> 
+	<title>The Witcher Universe</title> 
+	<link rel="icon" type="image/png" href="images/logo1.png" />
+</head> 
+<body>
+	<div class="row">
+		<header>
+			<div class="container">
+				<a href="#" class="logo-cont">
+					<img src="images/logo1.png" alt="logo" class="logo">
+				</a>
+				<nav id="menu">					
+					<ul id="menu_listd" class="navbar">						
+						<li><img class="menu-button" onClick="showMenu2()" src="images/menu_icon.png" alt="menu"></li>
+						<li><a href="story.html" id="first">Story</a></li>					
+						<li><a href="characters.html">Characters</a></li>									
+						<li><a href="world.html">World</a></li>
+						<li><a href="quiz.html">Feedback</a></li>
+					</ul>		
+				</nav>
+			</div>
+		</header>
+	</div>
+	<div class="main-bg"></div>
+	<div class="row">
+		<section class="main-s">
+			<!--<img src="images/wmain.jpg" alt="main-img" class="main-img">-->
+			<h1 class="main-title">The Withcher Universe</h1>
+			<div class="main-text">
+				<img src="images/logo1.png" alt="logo" class="main-logo">
+				<h2 class="main-sub">Welcome to the Witcher summary site</h2>
+				<a class="main-line">-----------------</a><br>
+				<p class="main-desc">This site contains the basics of the fantasy world of the Witcher. The universe was created by polish writer <span class="author" onclick="location='https://en.wikipedia.org/wiki/Andrzej_Sapkowski'">Andrzej Sapkowski</span> in the 1990s. With recently peeking popularity, there are plenty of adaptations about the literary work in forms of games, comics and series. Mentioning series, a new Netflix adaptation is in the works at the moment, filming the scenes in Hungary, and starring Henry Cavill as the protagonist, Geralt. 				
+				</p><br>
+			</div>
+		</section>
+	</div>
+	<div class="row">
+		<footer>
+			<p>All rights belong to Andrzej Sapkowski & CD Project Red</p>
+		</footer>
+	</div>
+	<script>
+		var dclass = document.getElementById("menu_listd");		
+		function showMenu2() {
+			if (dclass.className == "navbar") {
+				dclass.className += " responsive";
+			} else {
+				dclass.className = "navbar";
+			}
+		}
+	</script>
+
+</body> 
+</HTML> 

@@ -1,0 +1,134 @@
+<!DOCTYPE HTML> 
+<HTML lang="hu">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Balog Marcell">
+	<meta name="description" content="Witcher">
+	<link rel="stylesheet" href="style.css"> 
+	<title>The Witcher Universe</title>
+	<link rel="icon" type="image/png" href="images/logo1.png" />
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="jquery-validation-1.19.0/dist/jquery.validate.min.js"></script>
+	<!--<script>
+		$(document).ready(function(){
+			$("#myform").validate({
+				rules: {
+					helpful: "recuired",
+				},
+				messages: {
+					helpful: "Please choose!",
+				},
+			});
+		});
+	</script>-->
+
+</head> 
+<body>
+	<div class="row">
+		<header>
+			<div class="container">
+				<a href="index.html" class="logo-cont">
+					<img src="images/logo1.png" alt="logo" class="logo">
+				</a>
+				<nav id="menu">					
+					<ul id="menu_listd" class="navbar">						
+						<li><img class="menu-button" onClick="showMenu2()" src="images/menu_icon.png" alt="menu"></li>
+						<li><a href="story.html" id="first">Story</a></li>					
+						<li><a href="characters.html">Characters</a></li>									
+						<li><a href="world.html">World</a></li>
+						<li><a href="#"  class="active">Feedback</a></li>
+					</ul>		
+				</nav>
+			</div>
+		</header>
+	</div>
+	<div class="common-bg">
+	</div>
+	<div class="row">
+		<h1 class="common-title">Feedback</h1>
+		<section class="quiz-cont">
+			<h1 class="quiz-title">Do you like our website?</h1>
+			<form class="quiz-form" id="myform" action="http://szamtud.uni-corvinus.hu/~blang/receive.php" method="post" novalidate="novalidate">
+				<table class="quiz-table">
+					<tr>
+						<td>
+							<p class="quiz-que">Would you recommend this website to your friends?</p>
+							<a>No</a><input type="range" min="1" max="10" value ="6" name="range"><a>Yes</a>
+							
+							<p class="quiz-que"><label for="texta">What other informations would you wish to see?</label></p>
+							<textarea id="texta" rows="8" cols="50" name="comment"> </textarea>
+							
+							<!--<p class="quiz-que">Which is you favorite book of the series?</p>
+							<input type="radio">-->
+
+							<p class="quiz-que">Was this site helpful for you?</p>
+							<input type="radio" name="helpful" id="helpY"><label for="helpY">Yes</label>
+							<input type="radio" name="helpful" id="helpN"><label for="helpN">No</label>
+						</td>
+						<td>
+							<p class="quiz-que">Which books and games have you read/played?</p>
+							<input type="checkbox" name="q1" id="q1"><label for="q1">The Last Wish</label><br>
+							<input type="checkbox" name="q2" id="q2"><label for="q2">Sword of Destiny</label><br>
+							<input type="checkbox" name="q3" id="q3"><label for="q3">Blood of Elves</label><br>
+							<input type="checkbox" name="q4" id="q4"><label for="q4">Time of Contempt</label><br>
+							<input type="checkbox" name="q5" id="q5"><label for="q5">Baptism of Fire</label><br>
+							<input type="checkbox" name="q6" id="q6"><label for="q6">The Tower of the Swallow</label><br>
+							<input type="checkbox" name="q7" id="q7"><label for="q7">The Lady of the Lake</label><br>
+							<input type="checkbox" name="q8" id="q8"><label for="q8">Season of Storms</label><br>
+							<input type="checkbox" name="q9" id="q9"><label for="q9">The Witcher</label><br>
+							<input type="checkbox" name="q10" id="q10"><label for="q10">TW2: Assassins of Kings</label><br>
+							<input type="checkbox" name="q11" id="q11"><label for="q11">TW3: Wild Hunt</label><br>
+							<input type="checkbox" name="q12" id="q12"><label for="q12">Thronebreaker</label><br>
+
+							<p class="quiz-que"><label for="qemail">Do you want to receive newsletters about the franchise? </label></p>
+							<input type="email" id="qemail">
+						</td>	
+					<tr>
+						<td colspan="2" class="quiz-submit">
+							<input type="reset" value="Reset" class="quiz-button">
+							<input type="submit" value="Send" class="quiz-button">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</section>
+	</div>
+	<div class="row">
+		<footer>
+			<p>All rights belong to Andrzej Sapkowski & CD Project Red</p>
+		</footer>
+	</div>
+	<script>
+		var dclass = document.getElementById("menu_listd");		
+		function showMenu2() {
+			if (dclass.className == "navbar") {
+				dclass.className += " responsive";
+			} else {
+				dclass.className = "navbar";
+			}
+		}
+	</script>
+	<script>
+		$(document).ready(function(){
+		  //$("#po").click(function(){
+		  //alert("asd");
+			$("#myform").validate({
+			
+				rules: {
+					helpful: {
+						recuired: true,
+					},
+					comment: "recuired",
+				},
+				messages: {
+					helpful: "Please choose.",
+					comment: "Please fill out this field.",
+				},
+			});
+		  //});
+		});
+	</script>
+
+</body> 
+</HTML> 
